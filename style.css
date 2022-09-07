@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(Poppins-SemiBold.ttf) format('truetype');
+}
+
+:root {
+  --corprimaria: #1a1a1a;
+  --corsecundaria: #ffffff;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins';
+  color: var(--corprimaria);
+}
+
+main {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_index > h1{
+  font-size: 3vh;
+  margin: 2vh;
+  font-family: 'Poppins-SemiBold';
+}
+
+.main_index > a {
+  text-decoration: none;
+}
+
+.main_index > a > button {
+  width: 30vw;
+  height: 10vh;
+  display: block;
+  margin: 1vh;
+  font-family: 'Poppins';
+  border: none;
+  border-radius: 4vh;
+  font-size: 2vh;
+  background: var(--corprimaria);
+  color: var(--corsecundaria);
+}
+
+.main_index > a > button:hover {
+  border: solid #1dc9c9;
+}
+
+.main_index > a > button:active {
+  background: var(--corsecundaria);
+  color: var(--corprimaria);
+}
+
+.main_adicionar_palavra > label {
+  margin-bottom: 1vh;
+  font-size: 2vh;
+}
+
+.main_adicionar_palavra input {
+  outline: none;
+  width: 30vw;
+  height: 5vh;
+  text-align: center;
+  border: .5vh solid var(--corprimaria);
+  border-radius: 2vh;
+  font-size: 2vh;
+  margin-bottom: 4vh;
+}
+
+.main_adicionar_palavra button {
+  margin-top: 1vh;
+  width: 31vw;
+  height: 6vh;
+  background: var(--corprimaria);
+  color: var(--corsecundaria);
+  border: none;
+  border-radius: 2vh;
+  font-size: 2vh;
+}
+
+.main_adicionar_palavra button:hover {
+  border: solid #1dc9c9;
+}
+
+.main_adicionar_palavra button:active {
+  background: var(--corsecundaria);
+  color: var(--corprimaria);
+}
+
+.main_jogo > .forca {
+  width: 100vw;
+  height: 85vh;
+  display: grid;
+}
+
+.main_jogo > .forca > .desenho_forca {
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.main_jogo > .forca > .desenho_forca > .desenho {
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_jogo > .forca > .desenho_forca > .desenho > img {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+  position: relative;
+  top: 5vh;
+}
+
+.main_jogo > .forca > .container_palavra_oculta {
+  width: 90vw;
+  height: 15vh;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2vh;
+  border: solid var(--corprimaria);
+  display: grid;
+}
+
+.main_jogo > .forca > .container_palavra_oculta > .palavra_oculta{
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 10vh;
+  font-family: 'Poppins-SemiBold';
+  line-height: 10vh;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main_jogo > .inferior {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.main_jogo > .inferior .botao_voltar {
+  width: 10vw;
+  height: 5vh;
+  margin-left: 5vw;
+  background: var(--corprimaria);
+  color: var(--corsecundaria);
+  border: none;
+  border-radius: 2vh;
+  font-size: 2vh;
+}
+
+.main_jogo > .inferior .botao_voltar:hover {
+  border: solid #1dc9c9;
+}
+
+.main_jogo > .inferior .botao_voltar:active {
+  background: var(--corsecundaria);
+  color: var(--corprimaria);
+}
+
+.main_jogo > .inferior > .log_letras {
+  width: 60vw;
+  height: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 2vh;
+  border: solid var(--corprimaria);
+  display: grid;
+}
+
+.main_jogo > .inferior > .log_letras > label {
+  font-size: 3vh;
+  margin-left: 1vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main_jogo > .inferior .botao_reiniciar {
+  width: 10vw;
+  height: 5vh;
+  margin-right: 5vw;
+  background: var(--corprimaria);
+  color: var(--corsecundaria);
+  border: none;
+  border-radius: 2vh;
+  font-size: 2vh;
+}
+
+.main_jogo > .inferior .botao_reiniciar:hover {
+  border: solid #1dc9c9;
+}
+
+.main_jogo > .inferior .botao_reiniciar:active {
+  background: var(--corsecundaria);
+  color: var(--corprimaria);
+}
+
+footer {
+  height: 5vh;
+  font-size: 2vh;
+  font-family: 'Poppins';
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

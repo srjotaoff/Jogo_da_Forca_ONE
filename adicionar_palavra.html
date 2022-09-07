@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da forca</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon.svg">
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    
+    <main class="main_adicionar_palavra">
+      <label for="palavra_nova">Digite uma palavra:</label>
+      <input id="palavra_nova" type="text" autofocus required placeholder="copo">
+
+      <label for="dica_palavra_nova">Digite uma dica para a palavra:</label>
+      <input id="dica_palavra_nova" type="text" required placeholder="comporta liquidos">
+
+      <button class="botao_adicionar_palavra" onclick="adicionar_palavra()">Adicionar palavra</button>
+      <a href="index.html">
+        <button class="botao_voltar">Voltar</button>
+      </a>
+
+    </main>
+    <footer>
+      <p>- Desenvolvido por SrJota - DevOps ONE -</p>
+    </footer>
+  </body>
+</html>

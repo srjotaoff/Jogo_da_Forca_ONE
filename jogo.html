@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da forca</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon.svg">
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main class="main_jogo">
+      <script>
+        document.addEventListener('keypress', function (event) {
+          const key = event.key;
+
+
+          if (isNaN(key)) {
+            if (log_letras.includes(key) == true) {
+              console.log("Letra ja digitada!")
+            }
+            if (log_letras.includes(key) == false) {
+              jogar(key)              
+            }
+          }
+        });
+      </script>
+      <div class="forca">
+        <div class="desenho_forca">
+          <div class="desenho" id="desenho">
+            <img src="img_1.svg">
+          </div>
+
+          <p class="dica" id="dica">
+          <script type="text/javascript">
+            document.write(palavra_dica)
+          </script>
+          </p>
+        </div>
+
+        <div class="container_palavra_oculta">
+          <div class="palavra_oculta" id="palavra_oculta">
+            <script type="text/javascript">
+              for(i = 0; i < num_letras; i++){
+                document.write(palavra_oculta[i].toUpperCase())
+              };
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <section class="inferior">
+        <a href="index.html">
+          <button class="botao_voltar">Voltar</button>
+        </a>
+        
+        <div class="log_letras">
+          <label id=log_letras>          
+          </label>
+        </div>
+        <button class="botao_reiniciar" onclick="reiniciar()" >Reiniciar</button>
+      </section>
+    </main>
+    <footer>
+      <p>- Desenvolvido por SrJota - DevOps ONE -</p>
+    </footer>
+  </body>
+</html>
