@@ -158,7 +158,7 @@ main {
   display:  float;
   position: absolute;
   background: none;
-  opacity: 1;
+  opacity: 0;
 }
 
 .main_jogo > .forca > .container_palavra_oculta > .palavra_oculta{
