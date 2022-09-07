@@ -14,7 +14,6 @@
     <main class="main_jogo">
       <script>
         document.addEventListener('keypress', function (event) {
-          document.getElementById("input_jogo").focus()
 
           const key = event.key;
 
@@ -43,6 +42,7 @@
         </div>
 
         <div class="container_palavra_oculta">
+
           <div class="palavra_oculta" id="palavra_oculta">
             <script type="text/javascript">
               for(i = 0; i < num_letras; i++){
@@ -50,7 +50,7 @@
               };
             </script>
           </div>
-          <input type="text" name="input_jogo" id="input_jogo" class="input_jogo" autofocus>
+          <input type="text" name="input_jogo">
         </div>
       </div>
 
