@@ -14,9 +14,7 @@
     <main class="main_jogo">
       <script>
         document.addEventListener('keypress', function (event) {
-          const key = event.key;
           document.getElementById("input_jogo").focus()
-
           const letras_permitidas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z"]
           if (letras_permitidas.includes(key)) {
             if (log_letras.includes(key) == true) {

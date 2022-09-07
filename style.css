@@ -157,6 +157,7 @@ main {
   margin-right: auto;
   display:  float;
   position: absolute;
+  background: none;
   opacity: 0;
 }
 

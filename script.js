@@ -71,6 +71,8 @@ function jogar (key) {
     document.getElementById("palavra_oculta").textContent = "ENFORCADO"
     document.getElementById("botao_reiniciar").focus()
   }
+  document.getElementById("dinput_jogo").value = "";
+  document.getElementById("input_jogo").focus()
 };
 
 
