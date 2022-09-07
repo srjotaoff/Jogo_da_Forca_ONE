@@ -56,6 +56,7 @@ function jogar (key) {
 
     if (palavra_oculta.includes("_") == false) {
       document.getElementById("desenho").innerHTML = "<img src=img_win.svg"+">"
+      document.getElementById("botao_reiniciar").focus()
     }
     }
     else {
@@ -68,6 +69,7 @@ function jogar (key) {
   if (tentativas == 7) {
     document.getElementById("dica").textContent = "Voce perdeu! Tente novamente."
     document.getElementById("palavra_oculta").textContent = "ENFORCADO"
+    document.getElementById("botao_reiniciar").focus()
   }
 };
 

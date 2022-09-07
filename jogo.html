@@ -15,9 +15,10 @@
       <script>
         document.addEventListener('keypress', function (event) {
           const key = event.key;
+          document.getElementById("input_jogo").focus()
 
-
-          if (isNaN(key)) {
+          const letras_permitidas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z"]
+          if (letras_permitidas.includes(key)) {
             if (log_letras.includes(key) == true) {
               console.log("Letra ja digitada!")
             }
@@ -41,6 +42,7 @@
         </div>
 
         <div class="container_palavra_oculta">
+          <input type="text" name="input_jogo" id="input_jogo" class="input_jogo" autofocus>
           <div class="palavra_oculta" id="palavra_oculta">
             <script type="text/javascript">
               for(i = 0; i < num_letras; i++){
@@ -60,7 +62,7 @@
           <label id=log_letras>          
           </label>
         </div>
-        <button class="botao_reiniciar" onclick="reiniciar()" >Reiniciar</button>
+        <button id="botao_reiniciar" class="botao_reiniciar" onclick="reiniciar()" >Reiniciar</button>
       </section>
     </main>
     <footer>

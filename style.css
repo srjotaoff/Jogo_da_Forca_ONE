@@ -232,3 +232,79 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+
+@media screen and (max-width: 480px) {
+  .main_index > a > button {
+    width: 80vw;
+  }
+
+  .main_adicionar_palavra input {
+    width: 80vw;
+  }
+
+  .main_adicionar_palavra button {
+    width: 80vw;
+  }
+
+  .main_jogo > .forca {
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+  }
+
+  .main_jogo > .forca > .desenho_forca {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vh;
+  }
+
+  .main_jogo > .forca > .desenho_forca > .desenho {
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_jogo > .forca > .desenho_forca > .desenho > img {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 10vh;
+  }
+
+  .main_jogo > .forca > .container_palavra_oculta > input{
+    display:  none;
+  }
+
+  .main_jogo > .forca > .container_palavra_oculta > .palavra_oculta{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 8vw;
+    font-family: 'Poppins-SemiBold';
+    line-height: 10vh;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .main_jogo > .inferior .botao_voltar {
+    width: 20vw;
+  }
+
+  .main_jogo > .inferior > .log_letras {
+    border: none;
+  }
+
+  .main_jogo > .inferior .botao_reiniciar {
+    width: 20vw;
+  }
+}
