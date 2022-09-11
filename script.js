@@ -38,18 +38,26 @@ function reiniciar() {
 
 
 function jogar_celular() {
-  document.addEventListener('keypress', function (event) {
-    const key = event.key;
-    const letras_permitidas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z"]
-    if (letras_permitidas.includes(key)) {
-      if (log_letras.includes(key) == true) {
-        console.log("Letra ja digitada!")
-      }
-      if (log_letras.includes(key) == false) {
-        jogar(key)
-      }
+  window.addEventListener('keypress', function (event) {
+    if (document.getElementById("jogar_celular") != null){
+      const key = (document.getElementById("jogar_celular"))
     }
-    });
+
+    else {
+      const key = event.key;
+
+        const letras_permitidas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z"]
+        if (letras_permitidas.includes(key)) {
+          if (log_letras.includes(key) == true) {
+            console.log("Letra ja digitada!")
+          }
+          if (log_letras.includes(key) == false) {
+            jogar(key)
+          }
+    }
+
+      }
+  });
 }
 
 
@@ -86,6 +94,8 @@ function jogar (key) {
     document.getElementById("palavra_oculta").textContent = "ENFORCADO"
     document.getElementById("botao_reiniciar").focus()
   }
+  document.getElementById("jogar_celular").value = ""
+  document.getElementById("jogar_celular").focus()
 };
 
 

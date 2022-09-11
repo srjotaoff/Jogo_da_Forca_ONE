@@ -14,15 +14,8 @@
   <body>
     <main class="main_jogo">
       <script>
-        document.addEventListener('keypress', function (event) {
-          if (document.getElementById("jogar_celular") != null){
-            const key = (document.getElementById("jogar_celular"))
-          }
-
-          else {
-            const key = event.key;
-          }
-
+        window.addEventListener('keypress', function (event) {
+          const key = event.key;
           const letras_permitidas = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","w","y","z"]
           if (letras_permitidas.includes(key)) {
             if (log_letras.includes(key) == true) {
@@ -31,7 +24,6 @@
             if (log_letras.includes(key) == false) {
               jogar(key)
             }
-
           }
         });
       </script>
