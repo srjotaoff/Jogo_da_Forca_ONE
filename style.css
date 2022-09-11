@@ -237,6 +237,10 @@ main {
   color: var(--corprimaria);
 }
 
+.teclado_mobile {
+  display: none;
+}
+
 footer {
   height: 5vh;
   font-size: 2vh;
@@ -262,13 +266,13 @@ footer {
 
   .main_jogo > .forca {
     width: 100vw;
-    height: 85vh;
+    height: 60vh;
     display: grid;
   }
 
   .main_jogo > .forca > .desenho_forca {
     width: 100vw;
-    height: 65vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -315,5 +319,25 @@ footer {
 
   .main_jogo > .inferior .botao_reiniciar {
     width: 20vw;
+  }
+
+  .teclado_mobile {
+    height: 24vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teclado_mobile section {
+    display: flex;
+  }
+
+  .teclado_mobile button {
+    height: 8vh;
+    width: 10vw;
+    margin: none;
+    border: none;
+    font-size: 2vh;
   }
 }
