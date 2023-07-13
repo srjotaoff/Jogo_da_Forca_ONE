@@ -14,6 +14,9 @@ if (biblioteca_from_localstorage != null){
   {palavra:"hamburguer" , dica:"melhor fast-food"} ,
   {palavra:"lavanda" , dica:"aroma agradavel"} ,
   {palavra:"enrolados" , dica:"filme da disney"} ,
+  {palavra:"ichia" , dica:"uma fruta"} ,
+  {palavra:"mangostim" , dica:"uma fruta baiana"} ,
+  {palavra:"dromedario" , dica:"um animal"} ,
   {palavra:"tecnologia" , dica:"sem ela a humanidade não seria nada"}];
 }
 
@@ -102,6 +105,9 @@ function adicionar_palavra (){
     {palavra:"hamburguer" , dica:"melhor fast-food"} ,
     {palavra:"lavanda" , dica:"aroma agradavel"} ,
     {palavra:"enrolados" , dica:"filme da disney"} ,
+    {palavra:"ichia" , dica:"uma fruta"} ,
+    {palavra:"mangostim" , dica:"uma fruta baiana"} ,
+    {palavra:"dromedario" , dica:"um animal"} ,
     {palavra:"tecnologia" , dica:"sem ela a humanidade não seria nada"}];
   }
 
