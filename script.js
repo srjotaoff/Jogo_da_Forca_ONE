@@ -8,8 +8,9 @@ if (biblioteca_from_localstorage != null){
   {palavra:"bergamota" , dica:"fruta nordestina"} ,
   {palavra:"palmeira" , dica:"tipo de arvore"} ,
   {palavra:"bentivi" , dica:"um passaro"} ,
+  {palavra:"abelha" , dica:"tem uma bundona"} ,              
   {palavra:"leao" , dica:"rei da selva"} ,
-  {palavra:"macadamia" , dica:"coquinho brasileiro"} ,
+  {palavra:"macadamia" , dica:"é uma noz"} ,
   {palavra:"hamburguer" , dica:"melhor fast-food"} ,
   {palavra:"lavanda" , dica:"aroma agradavel"} ,
   {palavra:"enrolados" , dica:"filme da disney"} ,
@@ -91,12 +92,13 @@ function jogar (key) {
 
 function adicionar_palavra (){
   if (biblioteca_from_localstorage == null) {
-    biblioteca = [{palavra: "ornitorringo" , dica: "animal exotico"},
-    {palavra:"mexirica" , dica:"fruta nordestina"} ,
+    biblioteca = [{palavra: "ornitorrinco" , dica: "animal exotico"},
+    {palavra:"bergamota" , dica:"fruta nordestina"} ,
     {palavra:"palmeira" , dica:"tipo de arvore"} ,
     {palavra:"bentivi" , dica:"um passaro"} ,
+    {palavra:"abelha" , dica:"tem uma bundona"} ,              
     {palavra:"leao" , dica:"rei da selva"} ,
-    {palavra:"macadamia" , dica:"coquinho brasileiro"} ,
+    {palavra:"macadamia" , dica:"é uma noz"} ,
     {palavra:"hamburguer" , dica:"melhor fast-food"} ,
     {palavra:"lavanda" , dica:"aroma agradavel"} ,
     {palavra:"enrolados" , dica:"filme da disney"} ,
