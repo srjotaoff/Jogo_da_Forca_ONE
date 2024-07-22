@@ -57,32 +57,42 @@ function teclado_mobile(letra) {
 
 function jogar (key) {
   let log_palavra_oculta = ("")
-  if (tentativas < 7){
-   if (palavra_secreta.includes(key) == true) {
-    for(i = 0; i < num_letras; i++){
-      if (palavra_secreta[i] == key ){
-        palavra_oculta[i] = key
-      }
-    }
-    for(i = 0; i < num_letras; i++){
-      log_palavra_oculta = (log_palavra_oculta + palavra_oculta[i])
-      document.getElementById("palavra_oculta").textContent = log_palavra_oculta.toUpperCase()
-    }
-    log_letras = (log_letras + key + " ")
-    document.getElementById("log_letras").textContent = log_letras.toUpperCase()
+
+  if (tentativas < 7) {
 
     if (palavra_oculta.includes("_") == false) {
-      document.getElementById("desenho").innerHTML = "<img src=img_win.svg"+">"
+      document.getElementById("desenho").innerHTML = "<img src=img_win.svg" + ">"
       document.getElementById("botao_reiniciar").focus()
     }
-    }
-    else {
-      tentativas ++
+
+    if (palavra_oculta.includes("_") == true) {
+      if (palavra_secreta.includes(key) == true) {
+        for(i = 0; i < num_letras; i++) {
+          if (palavra_secreta[i] == key ) {
+            palavra_oculta[i] = key
+        }
+      }
+      for(i = 0; i < num_letras; i++) {
+        log_palavra_oculta = (log_palavra_oculta + palavra_oculta[i])
+        document.getElementById("palavra_oculta").textContent = log_palavra_oculta.toUpperCase()
+      }
       log_letras = (log_letras + key + " ")
-      document.getElementById("desenho").innerHTML = "<img src="+"img_"+tentativas+".svg"+">"
       document.getElementById("log_letras").textContent = log_letras.toUpperCase()
+
+      if (palavra_oculta.includes("_") == false) {
+        document.getElementById("desenho").innerHTML = "<img src=img_win.svg" + ">"
+        document.getElementById("botao_reiniciar").focus()
+      }
+      }
+      else {
+        tentativas ++
+        log_letras = (log_letras + key + " ")
+        document.getElementById("desenho").innerHTML = ("<img src=" + "img_" + tentativas + ".svg" + ">")
+        document.getElementById("log_letras").textContent = log_letras.toUpperCase()
+      }
     }
   } 
+  
   if (tentativas == 7) {
     document.getElementById("dica").textContent = "Voce perdeu! Tente novamente."
     document.getElementById("palavra_oculta").textContent = "ENFORCADO"
